@@ -29,7 +29,7 @@ plt.xticks(ticks, tick_labels)
 ####### Remove minor ticks
 plt.minorticks_off()
 
-####### Add legend and make the legend text thicker
+####### Add legend
 plt.legend()
 plt.legend(prop={'weight': 'bold'})
 
