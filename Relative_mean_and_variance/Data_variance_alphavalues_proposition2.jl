@@ -81,6 +81,6 @@ for rate in rates_list
     
     ####### Write the results to a CSV file
     df = DataFrame(time=time_points, x=X_counts/500, y=Y_counts/500)
-    CSV.write("/Users/adekanmiomole/Julia_programming/new_gillespie_data_fixed_step_10000_$(rate).csv", df)
+    CSV.write("/path/variance_alpha_values_$(rate).csv", df)
     
 end

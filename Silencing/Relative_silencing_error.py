@@ -119,7 +119,7 @@ def calculate_relative_error(reference_variance_X, reference_variance_Y, other_f
     return pd.DataFrame(relative_error_results)
 
 ####### Generate file paths for the first set of simulations (te_0.0)
-base_path = "/Users/adekanmiomole/all_programming/"
+base_path = "/path/"
 file_paths_set1 = [f"{base_path}te_0.0_{i}_data.csv" for i in range(1, 101)]
 file_paths_set2 = [f"{base_path}te_1.0e-6_{i}_data.csv" for i in range(1, 101)]
 file_paths_set3 = [f"{base_path}te_2.0e-6_{i}_data.csv" for i in range(1, 101)]

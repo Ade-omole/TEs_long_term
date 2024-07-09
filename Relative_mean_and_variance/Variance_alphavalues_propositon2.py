@@ -24,7 +24,7 @@ data_covariance_list = []
 ####### Iterate through each alpha value in original alphas
 for alpha in alphas:
     ####### Update file path
-    file_path = f"/Users/adekanmiomole/Julia_programming/variance_alpha_values_{alpha}.csv"
+    file_path = f"/path/variance_alpha_values_{alpha}.csv"
 
     ####### Read data
     df = pd.read_csv(file_path)

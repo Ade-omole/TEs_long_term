@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 
 ####### File path to the CSV data
-file_path = "/Users/adekanmiomole/Julia_programming/gillespie_data_10000_distribution.csv"
+file_path = "/path/data_distribution.csv"
 
 ####### Parameters
 alpha = 2.0
