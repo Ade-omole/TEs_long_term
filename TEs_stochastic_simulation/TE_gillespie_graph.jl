@@ -102,5 +102,4 @@ plot!(t, u, lw=2, color=[:blue :green], label=false)  ####### Plot ODE solutions
 
 xlabel!("Time (generation)") 
 ylabel!("Copy number (scaled)")
-####### title!("Dynamics of TEs")
 savefig("/path/TE_gillespie_graph.pdf")  ####### Save the plot to a PDF file

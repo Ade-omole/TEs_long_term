@@ -81,7 +81,7 @@ for alpha in alphas_fine:
                 beta2 * (alpha * beta1 - delta1 * (beta1 + delta2)))) / V
     analytic_X_variance_list_fine.append(analytic_X_variance)
 
-####### Plotting
+####### Plot
 plt.figure(figsize=(12, 7))
 
 ####### Plot X variances

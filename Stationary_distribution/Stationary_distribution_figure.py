@@ -21,7 +21,7 @@ df = pd.read_csv(file_path)
 data_X = df['x']
 data_Y = df['y']
 
-####### Scale the data by V
+####### Scale the data by the V
 data_X_V = [x * V for x in data_X]
 data_Y_V = [x * V for x in data_Y]
 

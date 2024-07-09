@@ -33,7 +33,7 @@ plt.minorticks_off()
 plt.legend()
 plt.legend(prop={'weight': 'bold'})
 
-####### Rotate x-axis labels by 0 degrees (default)
+####### Rotate x-axis labels (default)
 plt.xticks(rotation=0)
 
 ####### Enable grid
