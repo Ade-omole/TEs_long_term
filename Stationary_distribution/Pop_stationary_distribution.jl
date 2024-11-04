@@ -8,10 +8,10 @@ population_size = 10000  ######## Total population size (number of individuals)
 num_diploid_pairs = 1  ######## Each individual has 1 pair of diploid chromosomes (2 haploid chromosomes total)
 generations = 10000  ######## Number of generations to simulate
 
-alpha = 2/100
+alpha = 2/10
 beta1 = 1/100
 beta2 = 0.001/100
-delta1 = 0.5/100
+delta1 = 0.5/10
 delta2 = 1.5/100
 dt = 1.0
 V = 500
