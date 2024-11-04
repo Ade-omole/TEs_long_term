@@ -24,7 +24,7 @@ data_covariance_list = []
 ####### Iterate through each alpha value in original alphas
 for alpha in alphas:
     ####### Update file path
-    file_path = f"/path/variance_alpha_values_{alpha}.csv"
+    file_path = f"/paths/variance_alpha_values_{alpha}.csv"
 
     ####### Read data
     df = pd.read_csv(file_path)
@@ -81,17 +81,17 @@ for alpha in alphas_fine:
                 beta2 * (alpha * beta1 - delta1 * (beta1 + delta2)))) / V
     analytic_X_variance_list_fine.append(analytic_X_variance)
 
-####### Plot
+####### Plotting
 plt.figure(figsize=(12, 7))
 
 ####### Plot X variances
 plt.plot(alphas_fine, analytic_X_variance_list_fine, 'b-', label='Autonomous Analytic Variance', linewidth=3)
-plt.plot(alphas, estimated_X_variance_list, 'b^', markerfacecolor='none', label='Autonomous Estimated Variance', markersize=10, linewidth=2)
+plt.plot(alphas, estimated_X_variance_list, 'b^', markerfacecolor='none', label='Autonomous Estimated Variance', markersize=16, linewidth=2)
 plt.plot(alphas, data_X_variance_list, 'bo', label='Autonomous Data Variance', markersize=10, linewidth=2)
 
 ####### Plot Y variances
 plt.plot(alphas, analytic_Y_variance_list, 'g-', label='Nonautonomous Analytic Variance', linewidth=3)
-plt.plot(alphas, estimated_Y_variance_list, 'g^', markerfacecolor='none', label='Nonautonomous Estimated Variance', markersize=10, linewidth=2)
+plt.plot(alphas, estimated_Y_variance_list, 'g^', markerfacecolor='none', label='Nonautonomous Estimated Variance', markersize=16, linewidth=2)
 plt.plot(alphas, data_Y_variance_list, 'go', label='Nonautonomous Data Variance', markersize=10, linewidth=2)
 
 ####### Draw a vertical line at alpha = 0.47
@@ -102,9 +102,12 @@ plt.axvspan(0.35, 0.3926, color='gray', alpha=0.2)
 plt.axvspan(0.3926, 0.46667, color='yellow', alpha=0.2)
 
 ####### Add labels and legend
-plt.xlabel(r'$\alpha$ (number of complex)', fontsize=16, fontweight='bold')
-plt.ylabel('Variance', fontsize=14, fontweight='bold')
+plt.xlabel(r'$\alpha$ (complex production rate)', fontsize=20, fontweight='bold')
+plt.ylabel('Variance', fontsize=20, fontweight='bold')
 plt.legend(fontsize=12, loc='upper left')
 # plt.legend(prop={'weight': 'bold'})
-plt.grid(True)
+# Set font size and make tick labels bold
+plt.xticks(fontsize=14, fontweight='bold')
+plt.yticks(fontsize=14, fontweight='bold')
+plt.grid(True, alpha=0.1)
 plt.show()
