@@ -1,5 +1,11 @@
-# Long-term persistence of transposable elements activity
-This repository contains the code and data files required to reproduce the figures and simulation results presented in the manuscript "Maintenance of long-term transposable element activity through regulation by nonautonomous elements" by Omole, A. D., and Czuppon, P.
+## Overview
+
+This repository contains the code and data files required to reproduce the figures and simulation results presented in the manuscript:
+
+**[Maintenance of long-term transposable element activity through regulation by nonautonomous elements](https://www.biorxiv.org/content/10.1101/2024.07.13.603364v2)**  
+by A.D. Omole, and P. Czuppon.  
+
+The manuscript is available on [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.07.13.603364v2).
 
 ## Reproducing Figures from the Manuscript
 
